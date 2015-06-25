@@ -1,18 +1,19 @@
-# express4-html-barebone-example
-A barebone express4 project example without any templating engine for views 
 
-Just clone this repo to bootstrap you express 4 project.
-
-How is this different from the express 4 generator ?
-----------------------------------------------------
-(This doesnt use any templating engine) 
+# express4-passport-mongo
+User authentication using express4 , passport.js and passport-local as strategy 
 
 
-1.Just clone this repo
+Installation
+------------
 
-2.do  npm install 
+1.Clone this repo
+2.npm install
 
-3.do npm start
+3.Ensure that mongod instance is running
 
+4.npm install grunt
+5.grunt dbseed //This adds users to the mongo database
 
+6.npm start
 
+7.Put all the servable pages into the public folder
