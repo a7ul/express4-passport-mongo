@@ -4,12 +4,10 @@
 var express = require('express');
 var router = express.Router();
 
-var getlogout = function(req, res, next) {
+router.get('/', function (req, res, next) {
   req.logout();
   res.redirect('/');
-};
-
-router.get('/',getlogout);
+});
 
 module.exports = router;
 

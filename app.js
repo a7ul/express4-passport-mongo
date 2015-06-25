@@ -21,10 +21,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(session({ secret: 'keyboard cat'}));
+app.use(session({ secret: 'Secret Unique Key'}));
 app.use(passport.initialize());
 app.use(passport.session());
 
+//routes begin
 app.use('/', indexRoutes);
 app.use('/login', loginRoute);
 app.use('/logout',logoutRoute);
@@ -34,11 +35,11 @@ app.use('/loginPage',loginPageRoute);
 app.use(passUtil.ensureAuthenticated);
 
 //To serve static content in the public folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error(' 404 Not Found');
   err.status = 404;
   next(err);
 });
