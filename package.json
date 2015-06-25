@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/master-atul/express4-html-barebone-example.git"
+    "url": ""
   },
   "keywords": [
     "express4"
@@ -17,11 +17,15 @@
   "author": "Atul R",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^0.8.3",
     "body-parser": "^1.13.1",
     "cookie-parser": "^1.3.5",
     "debug": "^2.2.0",
     "express": "^4.13.0",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.0.6",
     "morgan": "^1.6.0",
-    "passport": "^0.2.2"
+    "passport": "^0.2.2",
+    "passport-local": "^1.0.0"
   }
 }
